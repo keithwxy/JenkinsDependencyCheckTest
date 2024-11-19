@@ -1,6 +1,11 @@
 pipeline {
 	agent any
 	stages {
+		stage('Checkout SCM') {
+			steps {
+				git '/home/jejedajadjw'
+			}
+		}
 
 		stage('OWASP DependencyCheck') {
 			steps {
