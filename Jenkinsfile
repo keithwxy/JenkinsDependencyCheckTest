@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Checkout SCM') {
 			steps {
-				git '/home/jejedajadjw'
+				git '/var/jenkins_home/workspace/jejedajadjw'
 			}
 		}
 
